@@ -1,4 +1,4 @@
-# React AI Tool
+# React AI Chatbot
 
 An interactive **AI-powered web tool** built with **React** and **Vite**.  
 It provides a simple interface to ask questions and receive AI-generated answers in real time.  
