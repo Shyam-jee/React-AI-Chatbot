@@ -25,7 +25,10 @@ function App() {
     if (question) {
       if (localStorage.getItem("history")) {
         let history = JSON.parse(localStorage.getItem("history"));
+        history=history.slice(0, 24);
         history = [question, ...history];
+        history=history.map((item)=>item.charAt(0).toUpperCase()+item.slice(1).trim());
+        history=[...new Set(history)];
         localStorage.setItem("history", JSON.stringify(history));
         setRecentHistory(history);
       } else {
